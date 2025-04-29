@@ -6,18 +6,26 @@
     <classes>
       <class name="testScript.SubCategoryTest">
         <methods>
-          <include name="verifyTheUserIsAbleToAddNewSubCategory"/>
           <include name="driverQuit"/>
+          <include name="verifyTheUserIsAbleToAddNewSubCategory"/>
           <include name="browserInitialization"/>
+          <include name="verifyTheUserIsAbleToUpdateSubCategory"/>
         </methods>
       </class> <!-- testScript.SubCategoryTest -->
-      <class name="testScript.ManageFooterTextTest">
+      <class name="testScript.AdminUsersTest">
         <methods>
           <include name="driverQuit"/>
           <include name="browserInitialization"/>
-          <include name="verifyTheUpdateButtonIsDisplayed"/>
+          <include name="verifyUserIsAbleToAddUsers"/>
         </methods>
-      </class> <!-- testScript.ManageFooterTextTest -->
+      </class> <!-- testScript.AdminUsersTest -->
+      <class name="testScript.ManageNewsTest">
+        <methods>
+          <include name="driverQuit"/>
+          <include name="browserInitialization"/>
+          <include name="verifyTheUserIsAbleToAddNews"/>
+        </methods>
+      </class> <!-- testScript.ManageNewsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Paralleltesting] -->
