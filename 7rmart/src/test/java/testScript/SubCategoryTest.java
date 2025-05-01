@@ -8,7 +8,7 @@ import pages.SubCategoryPage;
 import utilities.ExcelUtilities;
 
 public class SubCategoryTest extends Base {
-	@Test(description = "Verify the user is able to add new subcategory")
+	@Test(retryAnalyzer=retry.Retry.class,description = "Verify the user is able to add new subcategory")
 	public void verifyTheUserIsAbleToAddNewSubCategory() throws Exception
 	{
 		String username = ExcelUtilities.readStringData(1, 0, "LoginPage");

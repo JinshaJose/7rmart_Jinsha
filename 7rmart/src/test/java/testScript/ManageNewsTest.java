@@ -9,7 +9,7 @@ import utilities.ExcelUtilities;
 
 
 public class ManageNewsTest extends Base {
-	@Test(retryAnalyzer=retry.Retry.class,description = "Verify the user is able to add news")
+	@Test(groups= {"regression"},retryAnalyzer=retry.Retry.class,description = "Verify the user is able to add news")
 	public void verifyTheUserIsAbleToAddNews() throws Exception {
 		
 		//String username="admin";

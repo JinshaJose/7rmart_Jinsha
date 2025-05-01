@@ -9,7 +9,7 @@ import utilities.ExcelUtilities;
 
 
 public class LoginTest extends Base{
-	@Test(retryAnalyzer=retry.Retry.class,description = "Verify the user is able to login using valid credentials")
+	@Test(groups= {"regression"},retryAnalyzer=retry.Retry.class,description = "Verify the user is able to login using valid credentials")
 	public void verifyTheUserIsAbleTologinUsingValidCredentials() throws Exception
 	{
 		
