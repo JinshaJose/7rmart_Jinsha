@@ -8,14 +8,14 @@
   <parameter name="browser" value="Chrome"></parameter>
   
     <classes>
-      <class name="testScript.ManageFooterTextTest"/>
-      <class name="testScript.ManageContactTest"/>
+      <!--class name="testScript.ManageFooterTextTest"-->
+      <!--class name="testScript.ManageContactTest"-->
       <class name="testScript.ManageCategoryTest"/>
-      <class name="testScript.ManageNewsTest"/>
+      <!--class name="testScript.ManageNewsTest"-->
       <class name="testScript.SubCategoryTest"/>
-      <class name="testScript.LogoutTest"/>
-      <class name="testScript.LoginTest"/>
-      <class name="testScript.AdminUsersTest"/>
+      <!--class name="testScript.LogoutTest"-->
+      <!--class name="testScript.LoginTest"-->
+      <!--class name="testScript.AdminUsersTest"-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

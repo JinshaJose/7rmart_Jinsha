@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-02T13:01:10 IST" name="Suite" finished-at="2025-05-02T13:02:09 IST" duration-ms="59451">
+  <suite started-at="2025-05-05T10:55:14 IST" name="Suite" finished-at="2025-05-05T10:56:19 IST" duration-ms="65124">
     <groups>
       <group name="regression">
         <method signature="LoginTest.verifyTheUserIsAbleTologinUsingValidCredentials()[pri:0, instance:testScript.LoginTest@1f9f6368]" name="verifyTheUserIsAbleTologinUsingValidCredentials" class="testScript.LoginTest"/>
         <method signature="ManageNewsTest.verifyTheUserIsAbleToAddNews()[pri:0, instance:testScript.ManageNewsTest@660acfb]" name="verifyTheUserIsAbleToAddNews" class="testScript.ManageNewsTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2025-05-02T13:01:10 IST" name="Test" finished-at="2025-05-02T13:02:09 IST" duration-ms="59451">
+    <test started-at="2025-05-05T10:55:14 IST" name="Test" finished-at="2025-05-05T10:56:19 IST" duration-ms="65124">
       <class name="testScript.ManageContactTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.ManageContactTest@23941fb4]" started-at="2025-05-02T13:01:18 IST" name="browserInitialization" finished-at="2025-05-02T13:01:20 IST" duration-ms="1593" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.ManageContactTest@23941fb4]" started-at="2025-05-05T10:55:26 IST" name="browserInitialization" finished-at="2025-05-05T10:55:29 IST" duration-ms="3097" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyTheUserIsAbleToUpdateContact()[pri:0, instance:testScript.ManageContactTest@23941fb4]" started-at="2025-05-02T13:01:20 IST" name="verifyTheUserIsAbleToUpdateContact" description="Verify the user is able to update contact" finished-at="2025-05-02T13:01:22 IST" duration-ms="1994" status="PASS">
+        <test-method signature="verifyTheUserIsAbleToUpdateContact()[pri:0, instance:testScript.ManageContactTest@23941fb4]" started-at="2025-05-05T10:55:29 IST" name="verifyTheUserIsAbleToUpdateContact" description="Verify the user is able to update contact" finished-at="2025-05-05T10:55:32 IST" duration-ms="3213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTheUserIsAbleToUpdateContact -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.ManageContactTest@23941fb4]" started-at="2025-05-02T13:01:22 IST" name="driverQuit" finished-at="2025-05-02T13:01:22 IST" duration-ms="155" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.ManageContactTest@23941fb4]" started-at="2025-05-05T10:55:32 IST" name="driverQuit" finished-at="2025-05-05T10:55:32 IST" duration-ms="154" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,7 +39,7 @@
         </test-method> <!-- driverQuit -->
       </class> <!-- testScript.ManageContactTest -->
       <class name="testScript.LoginTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-02T13:01:54 IST" name="browserInitialization" finished-at="2025-05-02T13:01:56 IST" duration-ms="1615" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-05T10:56:03 IST" name="browserInitialization" finished-at="2025-05-05T10:56:07 IST" duration-ms="3381" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,11 +50,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyTheUserIsAbleTologinUsingInvalidUsernameAndInvalidPassword()[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-02T13:01:56 IST" name="verifyTheUserIsAbleTologinUsingInvalidUsernameAndInvalidPassword" description="Verify the user is able to login using invalid username and invalid password" finished-at="2025-05-02T13:01:56 IST" duration-ms="393" status="PASS">
+        <test-method signature="verifyTheUserIsAbleTologinUsingInvalidUsernameAndInvalidPassword()[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-05T10:56:07 IST" name="verifyTheUserIsAbleTologinUsingInvalidUsernameAndInvalidPassword" description="Verify the user is able to login using invalid username and invalid password" finished-at="2025-05-05T10:56:07 IST" duration-ms="514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTheUserIsAbleTologinUsingInvalidUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-02T13:01:56 IST" name="driverQuit" finished-at="2025-05-02T13:01:56 IST" duration-ms="156" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-05T10:56:07 IST" name="driverQuit" finished-at="2025-05-05T10:56:08 IST" duration-ms="173" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -65,7 +65,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-02T13:01:56 IST" name="browserInitialization" finished-at="2025-05-02T13:01:58 IST" duration-ms="1607" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-05T10:56:08 IST" name="browserInitialization" finished-at="2025-05-05T10:56:09 IST" duration-ms="1740" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -76,11 +76,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyTheUserIsAbleTologinUsingInvalidUsernameAndValidPassword()[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-02T13:01:58 IST" name="verifyTheUserIsAbleTologinUsingInvalidUsernameAndValidPassword" description="Verify the user is able to login using invalid username and valid password" finished-at="2025-05-02T13:01:58 IST" duration-ms="380" status="PASS">
+        <test-method signature="verifyTheUserIsAbleTologinUsingInvalidUsernameAndValidPassword()[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-05T10:56:09 IST" name="verifyTheUserIsAbleTologinUsingInvalidUsernameAndValidPassword" description="Verify the user is able to login using invalid username and valid password" finished-at="2025-05-05T10:56:10 IST" duration-ms="545" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTheUserIsAbleTologinUsingInvalidUsernameAndValidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-02T13:01:58 IST" name="driverQuit" finished-at="2025-05-02T13:01:59 IST" duration-ms="143" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-05T10:56:10 IST" name="driverQuit" finished-at="2025-05-05T10:56:10 IST" duration-ms="157" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -91,7 +91,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-02T13:01:59 IST" name="browserInitialization" finished-at="2025-05-02T13:02:00 IST" duration-ms="1917" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-05T10:56:10 IST" name="browserInitialization" finished-at="2025-05-05T10:56:12 IST" duration-ms="1855" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -102,11 +102,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyTheUserIsAbleTologinUsingValidCredentials()[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-02T13:02:00 IST" name="verifyTheUserIsAbleTologinUsingValidCredentials" description="Verify the user is able to login using valid credentials" finished-at="2025-05-02T13:02:01 IST" duration-ms="730" status="PASS">
+        <test-method signature="verifyTheUserIsAbleTologinUsingValidCredentials()[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-05T10:56:12 IST" name="verifyTheUserIsAbleTologinUsingValidCredentials" description="Verify the user is able to login using valid credentials" finished-at="2025-05-05T10:56:12 IST" duration-ms="604" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTheUserIsAbleTologinUsingValidCredentials -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-02T13:02:01 IST" name="driverQuit" finished-at="2025-05-02T13:02:01 IST" duration-ms="131" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-05T10:56:12 IST" name="driverQuit" finished-at="2025-05-05T10:56:13 IST" duration-ms="169" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-02T13:02:01 IST" name="browserInitialization" finished-at="2025-05-02T13:02:04 IST" duration-ms="2870" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-05T10:56:13 IST" name="browserInitialization" finished-at="2025-05-05T10:56:14 IST" duration-ms="1775" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -128,11 +128,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyTheUserIsAbleTologinUsingValidUsernameAndInvalidPassword()[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-02T13:02:04 IST" name="verifyTheUserIsAbleTologinUsingValidUsernameAndInvalidPassword" description="Verify the user is able to login using valid username and invalid password" finished-at="2025-05-02T13:02:05 IST" duration-ms="400" status="PASS">
+        <test-method signature="verifyTheUserIsAbleTologinUsingValidUsernameAndInvalidPassword()[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-05T10:56:14 IST" name="verifyTheUserIsAbleTologinUsingValidUsernameAndInvalidPassword" description="Verify the user is able to login using valid username and invalid password" finished-at="2025-05-05T10:56:15 IST" duration-ms="495" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTheUserIsAbleTologinUsingValidUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-02T13:02:05 IST" name="driverQuit" finished-at="2025-05-02T13:02:05 IST" duration-ms="155" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.LoginTest@1f9f6368]" started-at="2025-05-05T10:56:15 IST" name="driverQuit" finished-at="2025-05-05T10:56:15 IST" duration-ms="184" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -145,7 +145,7 @@
         </test-method> <!-- driverQuit -->
       </class> <!-- testScript.LoginTest -->
       <class name="testScript.ManageCategoryTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.ManageCategoryTest@7486b455]" started-at="2025-05-02T13:01:22 IST" name="browserInitialization" finished-at="2025-05-02T13:01:25 IST" duration-ms="3100" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.ManageCategoryTest@7486b455]" started-at="2025-05-05T10:55:32 IST" name="browserInitialization" finished-at="2025-05-05T10:55:34 IST" duration-ms="1818" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -156,11 +156,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyTheUserISAbleToAddNewCategory()[pri:0, instance:testScript.ManageCategoryTest@7486b455]" started-at="2025-05-02T13:01:25 IST" name="verifyTheUserISAbleToAddNewCategory" description="Verify the user is able to add new category" finished-at="2025-05-02T13:01:31 IST" duration-ms="5662" status="PASS">
+        <test-method signature="verifyTheUserISAbleToAddNewCategory()[pri:0, instance:testScript.ManageCategoryTest@7486b455]" started-at="2025-05-05T10:55:34 IST" name="verifyTheUserISAbleToAddNewCategory" description="Verify the user is able to add new category" finished-at="2025-05-05T10:55:40 IST" duration-ms="6070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTheUserISAbleToAddNewCategory -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.ManageCategoryTest@7486b455]" started-at="2025-05-02T13:01:31 IST" name="driverQuit" finished-at="2025-05-02T13:01:31 IST" duration-ms="246" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.ManageCategoryTest@7486b455]" started-at="2025-05-05T10:55:40 IST" name="driverQuit" finished-at="2025-05-05T10:55:40 IST" duration-ms="229" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -173,7 +173,7 @@
         </test-method> <!-- driverQuit -->
       </class> <!-- testScript.ManageCategoryTest -->
       <class name="testScript.SubCategoryTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.SubCategoryTest@5d908d47]" started-at="2025-05-02T13:01:35 IST" name="browserInitialization" finished-at="2025-05-02T13:01:37 IST" duration-ms="1999" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.SubCategoryTest@5d908d47]" started-at="2025-05-05T10:55:45 IST" name="browserInitialization" finished-at="2025-05-05T10:55:47 IST" duration-ms="2041" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -184,11 +184,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyTheUserIsAbleToAddNewSubCategory()[pri:0, instance:testScript.SubCategoryTest@5d908d47]" started-at="2025-05-02T13:01:37 IST" name="verifyTheUserIsAbleToAddNewSubCategory" description="Verify the user is able to add new subcategory" finished-at="2025-05-02T13:01:42 IST" duration-ms="5303" status="PASS">
+        <test-method signature="verifyTheUserIsAbleToAddNewSubCategory()[pri:0, instance:testScript.SubCategoryTest@5d908d47]" started-at="2025-05-05T10:55:47 IST" name="verifyTheUserIsAbleToAddNewSubCategory" description="Verify the user is able to add new subcategory" finished-at="2025-05-05T10:55:52 IST" duration-ms="5241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTheUserIsAbleToAddNewSubCategory -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.SubCategoryTest@5d908d47]" started-at="2025-05-02T13:01:42 IST" name="driverQuit" finished-at="2025-05-02T13:01:43 IST" duration-ms="203" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.SubCategoryTest@5d908d47]" started-at="2025-05-05T10:55:52 IST" name="driverQuit" finished-at="2025-05-05T10:55:52 IST" duration-ms="189" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -199,7 +199,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.SubCategoryTest@5d908d47]" started-at="2025-05-02T13:01:43 IST" name="browserInitialization" finished-at="2025-05-02T13:01:45 IST" duration-ms="2453" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.SubCategoryTest@5d908d47]" started-at="2025-05-05T10:55:52 IST" name="browserInitialization" finished-at="2025-05-05T10:55:54 IST" duration-ms="1951" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -210,11 +210,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyTheUserIsAbleToUpdateSubCategory()[pri:0, instance:testScript.SubCategoryTest@5d908d47]" started-at="2025-05-02T13:01:45 IST" name="verifyTheUserIsAbleToUpdateSubCategory" description="Verify the user is able to update subcategory" finished-at="2025-05-02T13:01:50 IST" duration-ms="5396" status="PASS">
+        <test-method signature="verifyTheUserIsAbleToUpdateSubCategory()[pri:0, instance:testScript.SubCategoryTest@5d908d47]" started-at="2025-05-05T10:55:54 IST" name="verifyTheUserIsAbleToUpdateSubCategory" description="Verify the user is able to update subcategory" finished-at="2025-05-05T10:56:00 IST" duration-ms="5533" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTheUserIsAbleToUpdateSubCategory -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.SubCategoryTest@5d908d47]" started-at="2025-05-02T13:01:50 IST" name="driverQuit" finished-at="2025-05-02T13:01:51 IST" duration-ms="182" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.SubCategoryTest@5d908d47]" started-at="2025-05-05T10:56:00 IST" name="driverQuit" finished-at="2025-05-05T10:56:00 IST" duration-ms="247" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -227,7 +227,7 @@
         </test-method> <!-- driverQuit -->
       </class> <!-- testScript.SubCategoryTest -->
       <class name="testScript.ManageNewsTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.ManageNewsTest@660acfb]" started-at="2025-05-02T13:01:31 IST" name="browserInitialization" finished-at="2025-05-02T13:01:33 IST" duration-ms="2400" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.ManageNewsTest@660acfb]" started-at="2025-05-05T10:55:40 IST" name="browserInitialization" finished-at="2025-05-05T10:55:43 IST" duration-ms="2280" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -238,11 +238,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyTheUserIsAbleToAddNews()[pri:0, instance:testScript.ManageNewsTest@660acfb]" started-at="2025-05-02T13:01:33 IST" name="verifyTheUserIsAbleToAddNews" description="Verify the user is able to add news" finished-at="2025-05-02T13:01:35 IST" duration-ms="1556" status="PASS">
+        <test-method signature="verifyTheUserIsAbleToAddNews()[pri:0, instance:testScript.ManageNewsTest@660acfb]" started-at="2025-05-05T10:55:43 IST" name="verifyTheUserIsAbleToAddNews" description="Verify the user is able to add news" finished-at="2025-05-05T10:55:45 IST" duration-ms="2026" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTheUserIsAbleToAddNews -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.ManageNewsTest@660acfb]" started-at="2025-05-02T13:01:35 IST" name="driverQuit" finished-at="2025-05-02T13:01:35 IST" duration-ms="159" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.ManageNewsTest@660acfb]" started-at="2025-05-05T10:55:45 IST" name="driverQuit" finished-at="2025-05-05T10:55:45 IST" duration-ms="161" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -255,7 +255,7 @@
         </test-method> <!-- driverQuit -->
       </class> <!-- testScript.ManageNewsTest -->
       <class name="testScript.ManageFooterTextTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.ManageFooterTextTest@475c9c31]" started-at="2025-05-02T13:01:10 IST" name="browserInitialization" finished-at="2025-05-02T13:01:13 IST" duration-ms="2727" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.ManageFooterTextTest@475c9c31]" started-at="2025-05-05T10:55:14 IST" name="browserInitialization" finished-at="2025-05-05T10:55:19 IST" duration-ms="4342" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -266,11 +266,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyTheUpdateButtonIsDisplayed()[pri:0, instance:testScript.ManageFooterTextTest@475c9c31]" started-at="2025-05-02T13:01:13 IST" name="verifyTheUpdateButtonIsDisplayed" description="Verify the update button is displayed" finished-at="2025-05-02T13:01:14 IST" duration-ms="1548" status="PASS">
+        <test-method signature="verifyTheUpdateButtonIsDisplayed()[pri:0, instance:testScript.ManageFooterTextTest@475c9c31]" started-at="2025-05-05T10:55:19 IST" name="verifyTheUpdateButtonIsDisplayed" description="Verify the update button is displayed" finished-at="2025-05-05T10:55:21 IST" duration-ms="2247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTheUpdateButtonIsDisplayed -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.ManageFooterTextTest@475c9c31]" started-at="2025-05-02T13:01:14 IST" name="driverQuit" finished-at="2025-05-02T13:01:14 IST" duration-ms="184" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.ManageFooterTextTest@475c9c31]" started-at="2025-05-05T10:55:21 IST" name="driverQuit" finished-at="2025-05-05T10:55:21 IST" duration-ms="237" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -281,7 +281,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.ManageFooterTextTest@475c9c31]" started-at="2025-05-02T13:01:14 IST" name="browserInitialization" finished-at="2025-05-02T13:01:16 IST" duration-ms="1832" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.ManageFooterTextTest@475c9c31]" started-at="2025-05-05T10:55:21 IST" name="browserInitialization" finished-at="2025-05-05T10:55:23 IST" duration-ms="2000" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -292,11 +292,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyTheUserIsAbleToUpdateFooterText()[pri:0, instance:testScript.ManageFooterTextTest@475c9c31]" started-at="2025-05-02T13:01:16 IST" name="verifyTheUserIsAbleToUpdateFooterText" description="Verify the user is able to update footer text" finished-at="2025-05-02T13:01:18 IST" duration-ms="1835" status="PASS">
+        <test-method signature="verifyTheUserIsAbleToUpdateFooterText()[pri:0, instance:testScript.ManageFooterTextTest@475c9c31]" started-at="2025-05-05T10:55:23 IST" name="verifyTheUserIsAbleToUpdateFooterText" description="Verify the user is able to update footer text" finished-at="2025-05-05T10:55:26 IST" duration-ms="2423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTheUserIsAbleToUpdateFooterText -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.ManageFooterTextTest@475c9c31]" started-at="2025-05-02T13:01:18 IST" name="driverQuit" finished-at="2025-05-02T13:01:18 IST" duration-ms="138" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.ManageFooterTextTest@475c9c31]" started-at="2025-05-05T10:55:26 IST" name="driverQuit" finished-at="2025-05-05T10:55:26 IST" duration-ms="158" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -309,7 +309,7 @@
         </test-method> <!-- driverQuit -->
       </class> <!-- testScript.ManageFooterTextTest -->
       <class name="testScript.LogoutTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.LogoutTest@5efa40fe]" started-at="2025-05-02T13:01:51 IST" name="browserInitialization" finished-at="2025-05-02T13:01:53 IST" duration-ms="2411" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.LogoutTest@5efa40fe]" started-at="2025-05-05T10:56:00 IST" name="browserInitialization" finished-at="2025-05-05T10:56:02 IST" duration-ms="2298" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -320,11 +320,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyTheUserIsAbleToLogout()[pri:0, instance:testScript.LogoutTest@5efa40fe]" started-at="2025-05-02T13:01:53 IST" name="verifyTheUserIsAbleToLogout" description="Verify the user is able to logout" finished-at="2025-05-02T13:01:54 IST" duration-ms="1114" status="PASS">
+        <test-method signature="verifyTheUserIsAbleToLogout()[pri:0, instance:testScript.LogoutTest@5efa40fe]" started-at="2025-05-05T10:56:02 IST" name="verifyTheUserIsAbleToLogout" description="Verify the user is able to logout" finished-at="2025-05-05T10:56:03 IST" duration-ms="1031" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTheUserIsAbleToLogout -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.LogoutTest@5efa40fe]" started-at="2025-05-02T13:01:54 IST" name="driverQuit" finished-at="2025-05-02T13:01:54 IST" duration-ms="142" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.LogoutTest@5efa40fe]" started-at="2025-05-05T10:56:03 IST" name="driverQuit" finished-at="2025-05-05T10:56:03 IST" duration-ms="159" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -337,7 +337,7 @@
         </test-method> <!-- driverQuit -->
       </class> <!-- testScript.LogoutTest -->
       <class name="testScript.AdminUsersTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.AdminUsersTest@1c9b0314]" started-at="2025-05-02T13:02:05 IST" name="browserInitialization" finished-at="2025-05-02T13:02:08 IST" duration-ms="2744" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.AdminUsersTest@1c9b0314]" started-at="2025-05-05T10:56:15 IST" name="browserInitialization" finished-at="2025-05-05T10:56:17 IST" duration-ms="2075" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -348,11 +348,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyUserIsAbleToAddUsers()[pri:0, instance:testScript.AdminUsersTest@1c9b0314]" started-at="2025-05-02T13:02:08 IST" name="verifyUserIsAbleToAddUsers" description="Verfit the user is able to add users" finished-at="2025-05-02T13:02:09 IST" duration-ms="1675" status="PASS">
+        <test-method signature="verifyUserIsAbleToAddUsers()[pri:0, instance:testScript.AdminUsersTest@1c9b0314]" started-at="2025-05-05T10:56:17 IST" name="verifyUserIsAbleToAddUsers" description="Verfit the user is able to add users" finished-at="2025-05-05T10:56:19 IST" duration-ms="2004" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserIsAbleToAddUsers -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.AdminUsersTest@1c9b0314]" started-at="2025-05-02T13:02:09 IST" name="driverQuit" finished-at="2025-05-02T13:02:09 IST" duration-ms="125" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.AdminUsersTest@1c9b0314]" started-at="2025-05-05T10:56:19 IST" name="driverQuit" finished-at="2025-05-05T10:56:19 IST" duration-ms="187" status="PASS">
           <params>
             <param index="0">
               <value>
