@@ -32,7 +32,7 @@ public class LoginTest extends Base{
 		loginpage.enterPassword(password);
 		loginpage.clickSignIn();
 		boolean alertmessage = loginpage.isAlertDisplayed();
-		Assert.assertTrue(alertmessage);
+		Assert.assertTrue(alertmessage,Constants.LOGINWITHINVALIDUSERNAMEANDVALIDPASSWORD);
 	}
 	@Test(retryAnalyzer=retry.Retry.class,description = "Verify the user is able to login using valid username and invalid password" )
 	public void verifyTheUserIsAbleTologinUsingValidUsernameAndInvalidPassword() throws Exception
@@ -44,7 +44,7 @@ public class LoginTest extends Base{
 		loginpage.enterPassword(password);
 		loginpage.clickSignIn();
 		boolean alertmessage = loginpage.isAlertDisplayed();
-		Assert.assertTrue(alertmessage);
+		Assert.assertTrue(alertmessage,Constants.LOGINWITHVALIDUSERNAMEANDINVALIDPASSWORD);
 	}
 	@Test(retryAnalyzer=retry.Retry.class,description = "Verify the user is able to login using invalid username and invalid password" )
 	public void verifyTheUserIsAbleTologinUsingInvalidUsernameAndInvalidPassword() throws Exception
@@ -56,7 +56,7 @@ public class LoginTest extends Base{
 		loginpage.enterPassword(password);
 		loginpage.clickSignIn();
 		boolean alertmessage = loginpage.isAlertDisplayed();
-		Assert.assertTrue(alertmessage);
+		Assert.assertTrue(alertmessage,Constants.LOGINWITHINVALIDUSERNAMEANDINVALIDPASSWORD);
 	}
 	
 }
