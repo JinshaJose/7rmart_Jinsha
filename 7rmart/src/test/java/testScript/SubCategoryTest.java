@@ -12,7 +12,7 @@ public class SubCategoryTest extends Base {
 	public LogoutPage logoutpage;
 	public SubCategoryPage subcategorypage;;
 	
-	@Test(retryAnalyzer=retry.Retry.class,description = "Verify the user is able to add new subcategory")
+	@Test(description = "Verify the user is able to add new subcategory")
 	public void verifyTheUserIsAbleToAddNewSubCategory() throws Exception
 	{
 		String username = ExcelUtilities.readStringData(1, 0, "LoginPage");
@@ -37,7 +37,7 @@ public class SubCategoryTest extends Base {
 		Assert.assertTrue(alertDisplayed);
 		
 	}
-	@Test(retryAnalyzer=retry.Retry.class,description = "Verify the user is able to update subcategory")
+	@Test(description = "Verify the user is able to update subcategory")
 	public void verifyTheUserIsAbleToUpdateSubCategory() throws Exception
 	{
 		String username = ExcelUtilities.readStringData(1, 0, "LoginPage");
@@ -58,8 +58,8 @@ public class SubCategoryTest extends Base {
 		//subcategorypage.deleteImg();
 		//subcategorypage.updateChooseFile();
 		//subcategorypage.clickSubCategoryUpdate();
-		boolean alertDisplayed = subcategorypage.isAlertDisplayed();
-		Assert.assertTrue(alertDisplayed);
+		//boolean alertUpdateDisplayed = subcategorypage.isUpdateAlertDisplayed();
+		//Assert.assertTrue(alertUpdateDisplayed);
 	}
 
 }

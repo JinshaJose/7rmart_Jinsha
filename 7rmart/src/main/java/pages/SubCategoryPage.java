@@ -26,6 +26,7 @@ public class SubCategoryPage {
 	@FindBy(xpath = "//input[@name='main_img' and @type='file']")WebElement subCategoryChooseFile;
 	@FindBy(xpath="//button[@name='create']")WebElement subCategorySave;
 	@FindBy(xpath="//i[@class='icon fas fa-check']")WebElement subCategoryAlert;
+	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement subCategoryUpdateAlert;
 	@FindBy(xpath="(//i[@class='fas fa-edit'])[2]")WebElement subCategoryAction;
 	@FindBy(xpath="//button[@name='update']")WebElement subCategoryUpdate;
 	@FindBy(xpath="//div[@id='imagePreview']")WebElement imgpreview;
@@ -85,7 +86,9 @@ public class SubCategoryPage {
 	{
 		WaitUtility wu = new WaitUtility();
 		wu.waitForElementIsVisible(driver, imgpreview);
-		subCategorySave.click();
+		PageUtility pu = new PageUtility();
+		pu.javaScriptExecutorClickMethod(subCategorySave, driver);
+		//subCategorySave.click();
 		return null;
 	}
 	public boolean isAlertDisplayed()
@@ -98,11 +101,6 @@ public class SubCategoryPage {
 		subCategoryAction.click();
 		return this;
 	}
-	/*public void deleteImg()
-	{
-		deleteImg.click();
-		driver.switchTo().alert().accept();
-	}*/
 	public SubCategoryPage clickSubCategoryUpdate()
 	{
 		
@@ -110,9 +108,15 @@ public class SubCategoryPage {
 		pu.javascriptScrollBottom(driver);
 		WaitUtility wu = new WaitUtility();
 		wu.waitForElementToBeClickable(driver, imgpreview);
-		subCategoryUpdate.click();
+		
+		pu.javaScriptExecutorClickMethod(subCategoryUpdate, driver);
+		//subCategoryUpdate.click();
 		return this;
 	}
+	public boolean isUpdateAlertDisplayed()
+	{
+		return subCategoryUpdateAlert.isDisplayed();
+		
+	}
 	
-
 }

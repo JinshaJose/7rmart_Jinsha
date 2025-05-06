@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-06T11:09:09 IST" name="Suite" finished-at="2025-05-06T11:09:18 IST" duration-ms="9037">
+  <suite started-at="2025-05-06T12:27:10 IST" name="Suite" finished-at="2025-05-06T12:27:24 IST" duration-ms="14505">
     <groups>
     </groups>
-    <test started-at="2025-05-06T11:09:09 IST" name="Test" finished-at="2025-05-06T11:09:18 IST" duration-ms="9037">
-      <class name="testScript.ManageCategoryTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.ManageCategoryTest@20b2475a]" started-at="2025-05-06T11:09:09 IST" name="browserInitialization" finished-at="2025-05-06T11:09:12 IST" duration-ms="2727" status="PASS">
+    <test started-at="2025-05-06T12:27:10 IST" name="Test" finished-at="2025-05-06T12:27:24 IST" duration-ms="14505">
+      <class name="testScript.SubCategoryTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.SubCategoryTest@7857fe2]" started-at="2025-05-06T12:27:10 IST" name="browserInitialization" finished-at="2025-05-06T12:27:12 IST" duration-ms="2084" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,22 +18,48 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyTheUserISAbleToAddNewCategory()[pri:0, instance:testScript.ManageCategoryTest@20b2475a]" started-at="2025-05-06T11:09:12 IST" name="verifyTheUserISAbleToAddNewCategory" description="Verify the user is able to add new category" finished-at="2025-05-06T11:09:18 IST" duration-ms="6229" status="PASS">
+        <test-method signature="verifyTheUserIsAbleToAddNewSubCategory()[pri:0, instance:testScript.SubCategoryTest@7857fe2]" started-at="2025-05-06T12:27:12 IST" name="verifyTheUserIsAbleToAddNewSubCategory" description="Verify the user is able to add new subcategory" finished-at="2025-05-06T12:27:18 IST" duration-ms="5845" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTheUserISAbleToAddNewCategory -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.ManageCategoryTest@20b2475a]" started-at="2025-05-06T11:09:18 IST" name="driverQuit" finished-at="2025-05-06T11:09:18 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- verifyTheUserIsAbleToAddNewSubCategory -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.SubCategoryTest@7857fe2]" started-at="2025-05-06T12:27:18 IST" name="driverQuit" finished-at="2025-05-06T12:27:18 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTheUserISAbleToAddNewCategory status=SUCCESS method=ManageCategoryTest.verifyTheUserISAbleToAddNewCategory()[pri:0, instance:testScript.ManageCategoryTest@20b2475a] output={null}]]]>
+                <![CDATA[[TestResult name=verifyTheUserIsAbleToAddNewSubCategory status=SUCCESS method=SubCategoryTest.verifyTheUserIsAbleToAddNewSubCategory()[pri:0, instance:testScript.SubCategoryTest@7857fe2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-      </class> <!-- testScript.ManageCategoryTest -->
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.SubCategoryTest@7857fe2]" started-at="2025-05-06T12:27:18 IST" name="browserInitialization" finished-at="2025-05-06T12:27:19 IST" duration-ms="1582" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyTheUserIsAbleToUpdateSubCategory()[pri:0, instance:testScript.SubCategoryTest@7857fe2]" started-at="2025-05-06T12:27:19 IST" name="verifyTheUserIsAbleToUpdateSubCategory" description="Verify the user is able to update subcategory" finished-at="2025-05-06T12:27:24 IST" duration-ms="4945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheUserIsAbleToUpdateSubCategory -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.SubCategoryTest@7857fe2]" started-at="2025-05-06T12:27:24 IST" name="driverQuit" finished-at="2025-05-06T12:27:24 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheUserIsAbleToUpdateSubCategory status=SUCCESS method=SubCategoryTest.verifyTheUserIsAbleToUpdateSubCategory()[pri:0, instance:testScript.SubCategoryTest@7857fe2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+      </class> <!-- testScript.SubCategoryTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
