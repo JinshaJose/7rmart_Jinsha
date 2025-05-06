@@ -17,21 +17,24 @@ public class ManageNewsPage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-	public void clickMore()
+	/*public void clickMore()
 	{
 		manageNewsMoreInfo.click();
-	}
-	public void clickNew()
+	}*/
+	public ManageNewsPage clickNew()
 	{
 		newButton.click();
+		return this;
 	}
-	public void enterNews(String nValue)
+	public ManageNewsPage enterNews(String nValue)
 	{
 		enterNews.sendKeys(nValue);
+		return this;
 	}
-	public void clickSave()
+	public ManageNewsPage clickSave()
 	{
 		save.click();
+		return this;
 	}
 	public boolean isAlertDisplayed()
 	{

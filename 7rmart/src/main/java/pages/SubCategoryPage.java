@@ -19,7 +19,7 @@ import utilities.WaitUtility;
 
 public class SubCategoryPage {
 	WebDriver driver;
-	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-sub-category']")WebElement subCategoryMoreInfo;
+	//@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-sub-category']")WebElement subCategoryMoreInfo;
 	@FindBy(xpath="//a[@onclick=\"click_button(1)\"]")WebElement subCategoryNew;
 	@FindBy(xpath="//select[@id=\"cat_id\"]")WebElement category;
 	@FindBy(xpath="//input[@id='subcategory']")WebElement subCategory;
@@ -34,30 +34,34 @@ public class SubCategoryPage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-	public void clickSubCategoryMoreInfo()
+	/*public void clickSubCategoryMoreInfo()
 	{
 		subCategoryMoreInfo.click();
-	}
-	public void clickSubCategoryNew()
+	}*/
+	public SubCategoryPage clickSubCategoryNew()
 	{
 		subCategoryNew.click();
+		return this;
 	}
-	public void selectCategory()
+	public SubCategoryPage selectCategory()
 	{
 		PageUtility pu = new PageUtility();
 		pu.selectByIndexMethod(category, 1);
+		return this;
 	}
-	public void updateCategory()
+	public SubCategoryPage updateCategory()
 	{
 		PageUtility pu = new PageUtility();
 		pu.selectByIndexMethod(category, 2);
+		return this;
 	}
-	public void enterSubCategorySub(String valuesubCategory)
+	public SubCategoryPage enterSubCategorySub(String valuesubCategory)
 	{
 		subCategory.clear();
 		subCategory.sendKeys(valuesubCategory);
+		return this;
 	}
-	public void clickChooseFile() throws AWTException
+	public SubCategoryPage clickChooseFile() throws AWTException
 	{
 		//subCategoryChooseFile.click();
 		PageUtility pu = new PageUtility();
@@ -65,8 +69,9 @@ public class SubCategoryPage {
 
 		FileUploadUtility fileuploadutilities =new FileUploadUtility();
 		fileuploadutilities.fileUploadUsingRobotClass(subCategoryChooseFile,Constants.IMG);
+		return this;
 	}
-	public void updateChooseFile() throws AWTException
+	public SubCategoryPage updateChooseFile() throws AWTException
 	{
 		//subCategoryChooseFile.click();
 		PageUtility pu = new PageUtility();
@@ -74,35 +79,39 @@ public class SubCategoryPage {
 
 		FileUploadUtility fileuploadutilities =new FileUploadUtility();
 		fileuploadutilities.fileUploadUsingRobotClass(subCategoryChooseFile,Constants.IMG1);
+		return this;
 	}
-	public void clickSubCategorySave()
+	public SubCategoryPage clickSubCategorySave()
 	{
 		WaitUtility wu = new WaitUtility();
 		wu.waitForElementIsVisible(driver, imgpreview);
 		subCategorySave.click();
+		return null;
 	}
 	public boolean isAlertDisplayed()
 	{
 		return subCategoryAlert.isDisplayed();
 		
 	}
-	public void clicksubCategoryAction()
+	public SubCategoryPage clicksubCategoryAction()
 	{
 		subCategoryAction.click();
+		return this;
 	}
 	/*public void deleteImg()
 	{
 		deleteImg.click();
 		driver.switchTo().alert().accept();
 	}*/
-	public void clickSubCategoryUpdate()
+	public SubCategoryPage clickSubCategoryUpdate()
 	{
 		
 		PageUtility pu = new PageUtility();
 		pu.javascriptScrollBottom(driver);
 		WaitUtility wu = new WaitUtility();
-		wu.waitForElementIsVisible(driver, imgpreview);
+		wu.waitForElementToBeClickable(driver, imgpreview);
 		subCategoryUpdate.click();
+		return this;
 	}
 	
 

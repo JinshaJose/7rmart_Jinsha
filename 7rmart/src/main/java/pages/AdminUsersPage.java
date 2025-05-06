@@ -10,7 +10,7 @@ import utilities.PageUtility;
 
 public class AdminUsersPage {
 	WebDriver driver;
-	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and @class='small-box-footer']")WebElement adminUsersMoreInfo;
+	//@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and @class='small-box-footer']")WebElement adminUsersMoreInfo;
 	@FindBy(xpath="//a[@onclick='click_button(1)']")WebElement adminUserNewButton;
 	@FindBy(xpath="//input[@id='username']")WebElement adminUserUsername;
 	@FindBy(xpath="//input[@id='password']")WebElement adminUserPassword;
@@ -22,33 +22,38 @@ public class AdminUsersPage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-	public void clickAdminUserMoreInfo()
+	/*public void clickAdminUserMoreInfo()
 	{
 		adminUsersMoreInfo.click();
-	}
-	public void clickAdminUserNew()
+	}*/
+	public AdminUsersPage clickAdminUserNew()
 	{
 		adminUserNewButton.click();
+		return this;
 	}
-	public void enterAdminUserUsername(String valueAdminUserUsername)
+	public AdminUsersPage enterAdminUserUsername(String valueAdminUserUsername)
 	{
 		adminUserUsername.sendKeys(valueAdminUserUsername);
+		return this;
 	}
-	public void enterAdminUserPassword(String valueAdminUserPassword)
+	public AdminUsersPage enterAdminUserPassword(String valueAdminUserPassword)
 	{
 		adminUserPassword.sendKeys(valueAdminUserPassword);
+		return this;
 	}
-	public void selectAdminUserUsertype()
+	public AdminUsersPage selectAdminUserUsertype()
 	{
 		//Select s= new Select(userType);
 		//s.selectByIndex(1);
 		PageUtility pu = new PageUtility();
 		pu.selectByIndexMethod(userType, 1);//method name in page utility
+		return this;
 		
 	}
-	public void clickAdminUserSave()
+	public AdminUsersPage clickAdminUserSave()
 	{
 		adminUserSaveButton.click();
+		return this;
 	}
 	public boolean isAdminUserAlertDisplayed()
 	{

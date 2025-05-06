@@ -18,18 +18,21 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void enterUserName(String usernamevalue)
+	public LoginPage enterUserName(String usernamevalue)
 	{
-		username.sendKeys(usernamevalue);	
+		username.sendKeys(usernamevalue);
+		return this;	
 	}
 	
-	public void enterPassword(String passwordvalue)
+	public LoginPage enterPassword(String passwordvalue)
 	{
 		password.sendKeys(passwordvalue);
+		return this;
 	}
-	public void clickSignIn()
+	public LogoutPage clickSignIn()
 	{
 		signIn.click();
+		return new LogoutPage(driver);
 	}
 	public boolean isHomepageLoaded()
 	{

@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ManageFooterTextPage {
 	WebDriver driver;
-	@FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-footertext'])[2]")WebElement manageFooterTextMoreInfo;
+	//@FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-footertext'])[2]")WebElement manageFooterTextMoreInfo;
 	@FindBy(xpath="(//i[@class='fas fa-edit'])[1]")WebElement manageFooterTextAction;
 	@FindBy(xpath="//textarea[@placeholder='Enter the Address']")WebElement manageFooterTextAddress;
 	@FindBy(xpath="//input[@id='email']")WebElement manageFooterTextEmail;
@@ -18,33 +18,38 @@ public class ManageFooterTextPage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-	public void clickManageFooterTextMoreInfo()
+	/*public void clickManageFooterTextMoreInfo()
 	{
 		manageFooterTextMoreInfo.click();
-	}
-	public void clickManageFooterTextAction()
+	}*/
+	public ManageFooterTextPage clickManageFooterTextAction()
 	{
 		manageFooterTextAction.click();
+		return this;
 	}
-	public void enterManageFooterTextAddress(String valueAddress)
+	public ManageFooterTextPage enterManageFooterTextAddress(String valueAddress)
 	{
 		manageFooterTextAddress.clear();
 		manageFooterTextAddress.sendKeys(valueAddress);
+		return this;
 	}
-	public void enterManageFooterTextEmail(String valueEmail)
+	public ManageFooterTextPage enterManageFooterTextEmail(String valueEmail)
 	{
 		manageFooterTextEmail.clear();
 		manageFooterTextEmail.sendKeys(valueEmail);
+		return this;
 	}
-	public void enterManageFooterTextPhone(String valuePhone)
+	public ManageFooterTextPage enterManageFooterTextPhone(String valuePhone)
 	{
 		manageFooterTextPhone.clear();
 		manageFooterTextPhone.sendKeys(valuePhone);
+		return this;
 		
 	}
-	public void clickManageFooterTextUpdate()
+	public ManageFooterTextPage clickManageFooterTextUpdate()
 	{
 		manageFooterTextUpdate.click();
+		return this;
 	}
 	public boolean isManageFooterUpdateDisplayed()
 	{

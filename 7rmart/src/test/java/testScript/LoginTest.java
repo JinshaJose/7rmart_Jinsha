@@ -16,8 +16,8 @@ public class LoginTest extends Base{
 		String username = ExcelUtilities.readStringData(1, 0, "LoginPage");
 		String password = ExcelUtilities.readStringData(1, 1, "LoginPage");
 		LoginPage loginpage = new LoginPage(driver);
-		loginpage.enterUserName(username);
-		loginpage.enterPassword(password);
+		loginpage.enterUserName(username).enterPassword(password);
+		//loginpage.enterPassword(password);
 		loginpage.clickSignIn();
 		boolean isDasboardLoaded = loginpage.isHomepageLoaded();
 		Assert.assertTrue(isDasboardLoaded,Constants.LOGINWITHCORRECTCREDENTIALS);
@@ -28,8 +28,8 @@ public class LoginTest extends Base{
 		String username = ExcelUtilities.readStringData(2, 0, "LoginPage");
 		String password = ExcelUtilities.readStringData(2, 1, "LoginPage");
 		LoginPage loginpage = new LoginPage(driver);
-		loginpage.enterUserName(username);
-		loginpage.enterPassword(password);
+		loginpage.enterUserName(username).enterPassword(password);
+		//loginpage.enterPassword(password);
 		loginpage.clickSignIn();
 		boolean alertmessage = loginpage.isAlertDisplayed();
 		Assert.assertTrue(alertmessage,Constants.LOGINWITHINVALIDUSERNAMEANDVALIDPASSWORD);
@@ -40,8 +40,8 @@ public class LoginTest extends Base{
 		String username = ExcelUtilities.readStringData(3, 0, "LoginPage");
 		String password = ExcelUtilities.readStringData(3, 1, "LoginPage");
 		LoginPage loginpage = new LoginPage(driver);
-		loginpage.enterUserName(username);
-		loginpage.enterPassword(password);
+		loginpage.enterUserName(username).enterPassword(password);
+		//loginpage.enterPassword(password);
 		loginpage.clickSignIn();
 		boolean alertmessage = loginpage.isAlertDisplayed();
 		Assert.assertTrue(alertmessage,Constants.LOGINWITHVALIDUSERNAMEANDINVALIDPASSWORD);
@@ -52,8 +52,8 @@ public class LoginTest extends Base{
 		String username = ExcelUtilities.readStringData(4, 0, "LoginPage");
 		String password = ExcelUtilities.readStringData(4, 1, "LoginPage");
 		LoginPage loginpage = new LoginPage(driver);
-		loginpage.enterUserName(username);
-		loginpage.enterPassword(password);
+		loginpage.enterUserName(username).enterPassword(password);
+		//loginpage.enterPassword(password);
 		loginpage.clickSignIn();
 		boolean alertmessage = loginpage.isAlertDisplayed();
 		Assert.assertTrue(alertmessage,Constants.LOGINWITHINVALIDUSERNAMEANDINVALIDPASSWORD);

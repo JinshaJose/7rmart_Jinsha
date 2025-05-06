@@ -5,10 +5,13 @@ import org.testng.annotations.Test;
 
 import pages.AdminUsersPage;
 import pages.LoginPage;
+import pages.LogoutPage;
 import utilities.ExcelUtilities;
 import utilities.FakerUtility;
 
 public class AdminUsersTest extends Base {
+	public LogoutPage logoutpage;
+	public AdminUsersPage adminuserpage;
 	@Test(retryAnalyzer=retry.Retry.class,description = "Verfit the user is able to add users")
 	public void verifyUserIsAbleToAddUsers() throws Exception
 	{
@@ -25,17 +28,18 @@ public class AdminUsersTest extends Base {
 		//String adminPassword = ExcelUtilities.readStringData(1, 1, "AdminUsers");
 		
 		LoginPage loginpage = new LoginPage(driver);
-		loginpage.enterUserName(username);
-		loginpage.enterPassword(password);
-		loginpage.clickSignIn();
+		loginpage.enterUserName(username).enterPassword(password);
+		//loginpage.enterPassword(password);
+		logoutpage = loginpage.clickSignIn();
 		
-		AdminUsersPage adminuserpage = new AdminUsersPage(driver);
-		adminuserpage.clickAdminUserMoreInfo();
-		adminuserpage.clickAdminUserNew();
-		adminuserpage.enterAdminUserUsername(adminUsername);
-		adminuserpage.enterAdminUserPassword(adminPassword);
-		adminuserpage.selectAdminUserUsertype();
-		adminuserpage.clickAdminUserSave();
+		//AdminUsersPage adminuserpage = new AdminUsersPage(driver);
+		//adminuserpage.clickAdminUserMoreInfo();
+		adminuserpage = logoutpage.clickAdminUserMoreInfo();
+		adminuserpage.clickAdminUserNew().enterAdminUserUsername(adminUsername).enterAdminUserPassword(adminPassword).selectAdminUserUsertype().clickAdminUserSave();
+		//adminuserpage.enterAdminUserUsername(adminUsername);
+		//adminuserpage.enterAdminUserPassword(adminPassword);
+		//adminuserpage.selectAdminUserUsertype();
+		//adminuserpage.clickAdminUserSave();
 		boolean adminUserAlert = adminuserpage.isAdminUserAlertDisplayed();
 		Assert.assertTrue(adminUserAlert);
 	}

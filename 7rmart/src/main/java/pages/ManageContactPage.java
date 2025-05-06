@@ -9,7 +9,7 @@ import utilities.PageUtility;
 
 public class ManageContactPage {
 	WebDriver driver;
-	@FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-contact'])[2]")WebElement manageContactMoreInfo;
+	//@FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-contact'])[2]")WebElement manageContactMoreInfo;
 	@FindBy(xpath="//i[@class='fas fa-edit']")WebElement manageContactAction;
 	@FindBy(xpath="//input[@id='phone']")WebElement manageContactPhone;
 	@FindBy(xpath="//input[@id='email']")WebElement manageContactEmail;
@@ -22,47 +22,54 @@ public class ManageContactPage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-	public void clickManageContactMoreInfo()
+	/*public void clickManageContactMoreInfo()
 	{
 		manageContactMoreInfo.click();
-	}
-	public void clickManageContactAction()
+	}*/
+	public ManageContactPage clickManageContactAction()
 	{
-		manageContactAction.click();	
+		manageContactAction.click();
+		return this;	
 	}
-	public void enterManageContactPhone(String valuemanageContactPhone)
+	public ManageContactPage enterManageContactPhone(String valuemanageContactPhone)
 	{
 		
 		manageContactPhone.clear();
 		manageContactPhone.sendKeys(valuemanageContactPhone);
+		return this;
 	}
-	public void enterManageConatctEmail(String valuemanageContactEmail )
+	public ManageContactPage enterManageConatctEmail(String valuemanageContactEmail )
 	{
 		manageContactEmail.clear();
-		manageContactEmail.sendKeys(valuemanageContactEmail);	
+		manageContactEmail.sendKeys(valuemanageContactEmail);
+		return this;	
 	}
-	public void enterManageConatctAddress(String valuemanageContactAddress )
+	public ManageContactPage enterManageConatctAddress(String valuemanageContactAddress )
 	{
 		manageContactAddress.clear();
 		manageContactAddress.sendKeys(valuemanageContactAddress);
+		return this;
 	}
-	public void enterManageContactDeliveryTime(String valuemanageContactDeliveryTime )
+	public ManageContactPage enterManageContactDeliveryTime(String valuemanageContactDeliveryTime )
 	{
 		manageContactDeliveryTime.clear();
 		manageContactDeliveryTime.sendKeys(valuemanageContactDeliveryTime);
+		return this;
 	}
-	public void enterManageContactDeliveryCharge(String valuemanageContactDeliveryChargeLimit)
+	public ManageContactPage enterManageContactDeliveryCharge(String valuemanageContactDeliveryChargeLimit)
 	{
 		PageUtility pu = new PageUtility();
 		pu.javascriptScrollBottom(driver);
 		manageContactDeliveryChargeLimit.clear();
 		manageContactDeliveryChargeLimit.sendKeys(valuemanageContactDeliveryChargeLimit);
+		return this;
 	}
-	public void clickManageContactUpdate()
+	public ManageContactPage clickManageContactUpdate()
 	{
 		PageUtility pu = new PageUtility();
 		pu.javascriptScrollBottom(driver);
 		manageContactUpdate.click();
+		return this;
 	}
 	public boolean isManageContactAlertDisplayed()
 	{

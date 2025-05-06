@@ -14,7 +14,7 @@ import utilities.WaitUtility;
 
 public class ManageCategoryPage {
 	WebDriver driver;
-	@FindBy(xpath="(//a[@href=\"https://groceryapp.uniqassosiates.com/admin/list-category\"])[3]")WebElement manageCatMoreInfo;
+	//@FindBy(xpath="(//a[@href=\"https://groceryapp.uniqassosiates.com/admin/list-category\"])[3]")WebElement manageCatMoreInfo;
 	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement manageCatNew;
 	@FindBy(xpath="//input[@id='category']")WebElement manageCatCategory;
 	@FindBy(xpath="//li[@id='134-selectable']")WebElement manageCatSelectGroups;
@@ -28,48 +28,55 @@ public class ManageCategoryPage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-	public void clickManageCategoryMoreInfo()
+	/*public void clickManageCategoryMoreInfo()
 	{
 		manageCatMoreInfo.click();
-	}
-	public void clickManageCategoryNew()
+	}*/
+	public ManageCategoryPage clickManageCategoryNew()
 	{
 		manageCatNew.click();
+		return this;
 	}
-	public void enterManageCatCategory(String valuemanageCateCategory)
+	public ManageCategoryPage enterManageCatCategory(String valuemanageCateCategory)
 	{
 		manageCatCategory.sendKeys(valuemanageCateCategory);
+		return this;
 	}
-	public void selectManageCategoryGroups()
+	public ManageCategoryPage selectManageCategoryGroups()
 	{
 		manageCatSelectGroups.click();
+		return this;
 	}
-	public void chooseFileManageCat() throws AWTException
+	public ManageCategoryPage chooseFileManageCat() throws AWTException
 	{
 		//manageCatChooseFile.click();
 		PageUtility pu = new PageUtility();
 		pu.javaScriptExecutorClickMethod(manageCatChooseFile, driver);
 		FileUploadUtility fileuploadutilities =new FileUploadUtility();
 		fileuploadutilities.fileUploadUsingRobotClass(manageCatChooseFile,Constants.IMG);
+		return this;
 		
 	}
-	public void selectOnTop()
+	public ManageCategoryPage selectOnTop()
 	{
 		
 		PageUtility pu = new PageUtility();
 		pu.javascriptScrollBottom(driver);
 		WaitUtility wu = new WaitUtility();
-		wu.waitForElementIsVisible(driver, imgpreview);
+		wu.waitForElementToBeClickable(driver, imgpreview);
 		
 		manageCatShowOnTop.click();
+		return this;
 	}
-	public void showOnLeft()
+	public ManageCategoryPage showOnLeft()
 	{
 		manageCatShowOnLeft.click();
+		return this;
 	}
-	public void clickManageCatSave()
+	public ManageCategoryPage clickManageCatSave()
 	{
 		manageCateSave.click();
+		return this;
 	}
 	public boolean isManageCategoryAlertDisplayed()
 	{
