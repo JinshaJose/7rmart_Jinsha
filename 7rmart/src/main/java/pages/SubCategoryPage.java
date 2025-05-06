@@ -85,7 +85,7 @@ public class SubCategoryPage {
 	public SubCategoryPage clickSubCategorySave()
 	{
 		WaitUtility wu = new WaitUtility();
-		wu.waitForElementIsVisible(driver, imgpreview);
+		wu.waitForElementIsVisible(driver, By.id("imagePreview"));
 		PageUtility pu = new PageUtility();
 		pu.javaScriptExecutorClickMethod(subCategorySave, driver);
 		//subCategorySave.click();
@@ -107,7 +107,7 @@ public class SubCategoryPage {
 		PageUtility pu = new PageUtility();
 		pu.javascriptScrollBottom(driver);
 		WaitUtility wu = new WaitUtility();
-		wu.waitForElementToBeClickable(driver, imgpreview);
+		wu.waitForElementIsVisible(driver, By.id("imagePreview"));
 		
 		pu.javaScriptExecutorClickMethod(subCategoryUpdate, driver);
 		//subCategoryUpdate.click();

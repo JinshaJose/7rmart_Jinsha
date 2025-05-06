@@ -9,6 +9,7 @@
     <classes>
       <class name="testScript.SubCategoryTest">
         <methods>
+          <include name="verifyTheUserIsAbleToAddNewSubCategory"/>
           <include name="driverQuit"/>
           <include name="browserInitialization"/>
           <include name="verifyTheUserIsAbleToUpdateSubCategory"/>
