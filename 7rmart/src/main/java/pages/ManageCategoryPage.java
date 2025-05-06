@@ -1,11 +1,16 @@
 package pages;
 
 import java.awt.AWTException;
+import java.time.Duration;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 
 import constants.Constants;
 import utilities.FileUploadUtility;
@@ -44,26 +49,34 @@ public class ManageCategoryPage {
 	}
 	public ManageCategoryPage selectManageCategoryGroups()
 	{
+		Wait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver)
+				.withTimeout(Duration.ofSeconds(30))
+				.pollingEvery(Duration.ofSeconds(5))
+				.ignoring(NoSuchElementException.class);
+				fluentWait.until(ExpectedConditions.elementToBeClickable(manageCatSelectGroups));
 		manageCatSelectGroups.click();
 		return this;
 	}
 	public ManageCategoryPage chooseFileManageCat() throws AWTException
 	{
 		//manageCatChooseFile.click();
-		PageUtility pu = new PageUtility();
+		/*PageUtility pu = new PageUtility();
 		pu.javaScriptExecutorClickMethod(manageCatChooseFile, driver);
 		FileUploadUtility fileuploadutilities =new FileUploadUtility();
 		fileuploadutilities.fileUploadUsingRobotClass(manageCatChooseFile,Constants.IMG);
+		return this;*/
+		FileUploadUtility fileuploadutilities =new FileUploadUtility();
+		fileuploadutilities.fileUploadUsingSendKeys(manageCatChooseFile, Constants.IMG);
 		return this;
 		
 	}
-	public ManageCategoryPage selectOnTop()
+	/*public ManageCategoryPage selectOnTop()
 	{
 		
 		PageUtility pu = new PageUtility();
 		pu.javascriptScrollBottom(driver);
-		WaitUtility wu = new WaitUtility();
-		wu.waitForElementToBeClickable(driver, imgpreview);
+		//WaitUtility wu = new WaitUtility();
+		//wu.waitForElementToBeClickable(driver, imgpreview);
 		
 		manageCatShowOnTop.click();
 		return this;
@@ -72,10 +85,12 @@ public class ManageCategoryPage {
 	{
 		manageCatShowOnLeft.click();
 		return this;
-	}
+	}*/
 	public ManageCategoryPage clickManageCatSave()
 	{
-		manageCateSave.click();
+		PageUtility pu = new PageUtility();
+		pu.javaScriptExecutorClickMethod(manageCateSave, driver);
+		//manageCateSave.click();
 		return this;
 	}
 	public boolean isManageCategoryAlertDisplayed()
