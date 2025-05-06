@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-06T10:47:58 IST" name="Suite" finished-at="2025-05-06T10:48:10 IST" duration-ms="12237">
+  <suite started-at="2025-05-06T11:09:09 IST" name="Suite" finished-at="2025-05-06T11:09:18 IST" duration-ms="9037">
     <groups>
     </groups>
-    <test started-at="2025-05-06T10:47:58 IST" name="Test" finished-at="2025-05-06T10:48:10 IST" duration-ms="12237">
+    <test started-at="2025-05-06T11:09:09 IST" name="Test" finished-at="2025-05-06T11:09:18 IST" duration-ms="9037">
       <class name="testScript.ManageCategoryTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.ManageCategoryTest@29d80d2b]" started-at="2025-05-06T10:47:58 IST" name="browserInitialization" finished-at="2025-05-06T10:48:05 IST" duration-ms="6840" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.ManageCategoryTest@20b2475a]" started-at="2025-05-06T11:09:09 IST" name="browserInitialization" finished-at="2025-05-06T11:09:12 IST" duration-ms="2727" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyTheUserISAbleToAddNewCategory()[pri:0, instance:testScript.ManageCategoryTest@29d80d2b]" started-at="2025-05-06T10:48:05 IST" name="verifyTheUserISAbleToAddNewCategory" description="Verify the user is able to add new category" finished-at="2025-05-06T10:48:10 IST" duration-ms="5007" status="PASS">
+        <test-method signature="verifyTheUserISAbleToAddNewCategory()[pri:0, instance:testScript.ManageCategoryTest@20b2475a]" started-at="2025-05-06T11:09:12 IST" name="verifyTheUserISAbleToAddNewCategory" description="Verify the user is able to add new category" finished-at="2025-05-06T11:09:18 IST" duration-ms="6229" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTheUserISAbleToAddNewCategory -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.ManageCategoryTest@29d80d2b]" started-at="2025-05-06T10:48:10 IST" name="driverQuit" finished-at="2025-05-06T10:48:10 IST" duration-ms="358" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.ManageCategoryTest@20b2475a]" started-at="2025-05-06T11:09:18 IST" name="driverQuit" finished-at="2025-05-06T11:09:18 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTheUserISAbleToAddNewCategory status=SUCCESS method=ManageCategoryTest.verifyTheUserISAbleToAddNewCategory()[pri:0, instance:testScript.ManageCategoryTest@29d80d2b] output={null}]]]>
+                <![CDATA[[TestResult name=verifyTheUserISAbleToAddNewCategory status=SUCCESS method=ManageCategoryTest.verifyTheUserISAbleToAddNewCategory()[pri:0, instance:testScript.ManageCategoryTest@20b2475a] output={null}]]]>
               </value>
             </param>
           </params>

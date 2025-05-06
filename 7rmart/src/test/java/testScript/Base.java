@@ -61,7 +61,7 @@ public class Base {
 			scrshot = new ScreenshotUtility();
 			scrshot.getScreenShot(driver, iTestResult.getName());
 		}
-		driver.quit();
+		//driver.quit();
 	
 
 }

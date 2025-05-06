@@ -30,7 +30,7 @@ public class ManageCategoryTest extends Base {
 		//managecategorypage.clickManageCategoryMoreInfo();
 		managecategorypage = logoutpage.clickManageCategoryMoreInfo();
 		managecategorypage.clickManageCategoryNew().enterManageCatCategory(manageCateCategory).selectManageCategoryGroups()
-		.chooseFileManageCat().clickManageCatSave();
+		.chooseFileManageCat().selectOnTop().showOnLeft().clickManageCatSave();
 		//managecategorypage.enterManageCatCategory("Test Category"+manageCateCategory);
 		//managecategorypage.selectManageCategoryGroups();
 		//managecategorypage.chooseFileManageCat();

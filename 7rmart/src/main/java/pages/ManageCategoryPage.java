@@ -49,28 +49,23 @@ public class ManageCategoryPage {
 	}
 	public ManageCategoryPage selectManageCategoryGroups()
 	{
-		Wait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver)
-				.withTimeout(Duration.ofSeconds(30))
-				.pollingEvery(Duration.ofSeconds(5))
-				.ignoring(NoSuchElementException.class);
-				fluentWait.until(ExpectedConditions.elementToBeClickable(manageCatSelectGroups));
 		manageCatSelectGroups.click();
 		return this;
 	}
 	public ManageCategoryPage chooseFileManageCat() throws AWTException
 	{
 		//manageCatChooseFile.click();
-		/*PageUtility pu = new PageUtility();
+		PageUtility pu = new PageUtility();
 		pu.javaScriptExecutorClickMethod(manageCatChooseFile, driver);
 		FileUploadUtility fileuploadutilities =new FileUploadUtility();
 		fileuploadutilities.fileUploadUsingRobotClass(manageCatChooseFile,Constants.IMG);
-		return this;*/
-		FileUploadUtility fileuploadutilities =new FileUploadUtility();
-		fileuploadutilities.fileUploadUsingSendKeys(manageCatChooseFile, Constants.IMG);
 		return this;
+		/*FileUploadUtility fileuploadutilities =new FileUploadUtility();
+		fileuploadutilities.fileUploadUsingSendKeys(manageCatChooseFile, Constants.IMG);
+		return this;*/
 		
 	}
-	/*public ManageCategoryPage selectOnTop()
+	public ManageCategoryPage selectOnTop()
 	{
 		
 		PageUtility pu = new PageUtility();
@@ -85,7 +80,7 @@ public class ManageCategoryPage {
 	{
 		manageCatShowOnLeft.click();
 		return this;
-	}*/
+	}
 	public ManageCategoryPage clickManageCatSave()
 	{
 		PageUtility pu = new PageUtility();
