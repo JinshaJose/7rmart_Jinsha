@@ -8,7 +8,7 @@ import pages.LogoutPage;
 import utilities.ExcelUtilities;
 
 public class LogoutTest extends Base {
-	public LogoutPage logoutpage;
+	
 	@Test(retryAnalyzer=retry.Retry.class,description = "Verify the user is able to logout")
 	public void verifyTheUserIsAbleToLogout() throws Exception
 	{
@@ -20,7 +20,7 @@ public class LogoutTest extends Base {
 		//loginpage.enterPassword(password);
 		loginpage.clickSignIn();
 		
-		//LogoutPage logoutpage = new LogoutPage(driver);
+		LogoutPage logoutpage = new LogoutPage(driver);
 		logoutpage.clickAdmin();
 		logoutpage.clickLogout();
 		boolean loginpageLoaded = logoutpage.isLoginPageLoaded();

@@ -7,14 +7,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="testScript.SubCategoryTest">
+      <class name="testScript.LogoutTest">
         <methods>
-          <include name="verifyTheUserIsAbleToAddNewSubCategory"/>
           <include name="driverQuit"/>
+          <include name="verifyTheUserIsAbleToLogout"/>
           <include name="browserInitialization"/>
-          <include name="verifyTheUserIsAbleToUpdateSubCategory"/>
         </methods>
-      </class> <!-- testScript.SubCategoryTest -->
+      </class> <!-- testScript.LogoutTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
